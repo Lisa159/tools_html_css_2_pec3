@@ -1,0 +1,35 @@
+article {
+  header {
+    background-image: linear-gradient(rgba(0 0 0 / 0.62), rgba(0 0 0 / 0.2)),
+      url("../images/festival.jpg?width=800");
+
+    h1,
+    p {
+      color: $contrast-color;
+    }
+  }
+
+  .content__container-quote {
+    color: $dark-main-color;
+    background-color: $bg-light-main-color;
+    border-left: 5px solid $dark-main-color;
+  }
+
+  .content__list {
+    border-top: 1px solid $light-main-color;
+    border-bottom: 1px solid $light-main-color;
+  }
+
+  .content__list-circle {
+    counter-reset: item;
+
+    > li {
+      counter-increment: item;
+    }
+
+    > li::before {
+      content: counter(item);
+      border-color: $light-main-color;
+    }
+  }
+}
