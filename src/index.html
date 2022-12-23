@@ -12,10 +12,10 @@
         <!-- do not remove this line! -->
         <title>Festival de música</title>
     </head>
-    <body class="flex flex-col min-h-screen m-0">
+    <body class="flex flex-col min-h-screen m-0 h-full">
         <include src="./views/header.html"></include>
         <main
-            class="h-full flex flex-col items-center mb-5 px-5 gap-5 lg:grid lg:gap-x-4 lg:py-0 lg:px-5 lg:grid-rows-[1.2fr_0.4fr_1.6fr_1.4fr_1.1fr_0.8fr] lg:grid-cols-[0.8fr_0.8fr_0.9fr_1.7fr_0.9fr_0.8fr_0.8fr] main-home"
+            class="h-full flex flex-col items-center mb-5 px-5 gap-5 lg:grid lg:gap-x-[15px] lg:gap-y-[20px] lg:py-0 lg:px-5 lg:grid-rows-[1.2fr_0.4fr_1.6fr_1.4fr_1.1fr_0.8fr] lg:grid-cols-[0.8fr_0.8fr_0.9fr_1.7fr_0.9fr_0.8fr_0.8fr] main-home"
         >
             <div
                 class="hidden lg:flex lg:items-center lg:justify-evenly lg:w-full lg:h-full lg:items-end main-home__star1"
@@ -37,10 +37,14 @@
                 class="w-full h-24 bg-center bg-cover lg:h-full main-home__background"
             ></div>
             <div class="self-center main-home__title">
-                <h1 class="text-center uppercase text-7xl">S.&.M</h1>
+                <h1
+                    class="text-center uppercase text-[4.375rem] mt-0 mb-2 font-medium leading-[1.2]"
+                >
+                    S.&.M
+                </h1>
             </div>
             <div class="w-full text-center main-home__subtitle">
-                <span class="text-xl">Soul and Music</span>
+                <span class="text-xl leading-[30px]">Soul and Music</span>
             </div>
             <div class="self-center text-center px-12 main-home__description">
                 <span
@@ -52,8 +56,12 @@
             <div
                 class="flex flex-col items-center w-full gap-2.5 p-5 uppercase lg:items-end main-home__date"
             >
-                <span class="text-4xl lg:text-end">2 de diciembre</span>
-                <span class="text-xl lg:text-end">Teatro Lorem Ipsum</span>
+                <span class="text-[2.5rem] leading-[3.75rem] lg:text-end"
+                    >2 de diciembre</span
+                >
+                <span class="text-xl lg:text-end leading-[30px]"
+                    >Teatro Lorem Ipsum</span
+                >
             </div>
             <div class="self-center text-xl text-center main-home__ticket">
                 <span>Entrada gratis</span>

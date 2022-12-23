@@ -1,56 +1,9 @@
-footer {
-  width: 100%;
-
-  @media (min-width: map-get($breakpoints, "medium")) {
-    padding: 0 5%;
-  }
-
-  @media (min-width: map-get($breakpoints, "large")) {
-    padding: 0 15%;
-  }
-}
-
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-  width: 100%;
-  padding: 20px 0;
   border-top: 2px $light-main-color solid;
-
-  @media (min-width: map-get($breakpoints, "medium")) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px 0;
-  }
 }
 
 .footer-container__links {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-
-  a {
-    width: 18px;
-    color: $main-color;
-  }
-}
-
-.footer-container__pages {
-  display: flex;
-  gap: 30px;
-
   a {
     color: $main-color;
-    text-decoration: none;
-
-    &:active {
-      color: $dark-main-color;
-    }
-
-    &:hover {
-      color: $light-main-color;
-    }
   }
 }
