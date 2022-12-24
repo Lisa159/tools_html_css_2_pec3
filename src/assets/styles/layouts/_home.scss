@@ -1,49 +1,14 @@
-@use "../utils" as *;
-
-@import "header";
 @import "festival";
-@import "footer";
 
 @layer components {
   .btn-primary {
-    @apply rounded-md py-1.5 px-3 text-base font-normal text-white h-[38px] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply rounded-md bg-dark-primary py-1.5 px-3 text-base font-normal text-white h-[38px];
   }
   .star-item {
-    @apply hidden lg:flex lg:items-center lg:justify-evenly lg:w-full lg:h-full lg:items-end;
+    @apply hidden bg-dark-primary lg:flex text-white lg:items-center lg:justify-evenly lg:w-full lg:h-full lg:items-end;
   }
   .ol-list-item {
-    @apply flex mb-[5px] before:text-black before:h-fit before:py-1.5 before:px-2.5 before:mr-2.5 before:text-center before:rounded-[100%] before:border-2 before:border-solid;
-  }
-}
-
-main {
-  color: $dark-main-color;
-}
-
-h1 {
-  color: $dark-main-color;
-}
-
-.main-home {
-  .main-home__background {
-    background-image: url("../images/guitar-poster.jpg?width=800");
-  }
-
-  .main-home__subtitle {
-    background-color: $bg-light-main-color;
-  }
-
-  .main-home__date {
-    background-color: $bg-light-main-color;
-  }
-
-  .main-home__members {
-    background-color: $bg-light-main-color;
-    border-color: $dark-main-color;
-
-    button {
-      background-color: $dark-main-color;
-    }
+    @apply flex mb-[5px] before:text-black before:h-fit before:py-1.5 before:px-2.5 before:mr-2.5 before:text-center before:rounded-[100%] before:border-2 before:border-solid before:border-light-primary;
   }
 }
 
@@ -58,12 +23,6 @@ h1 {
         grid-area: 1 / 6 / 2 / 8;
       }
 
-      .main-home__star1,
-      .main-home__star2 {
-        color: $contrast-color;
-        background-color: $dark-main-color;
-      }
-
       .main-home__date {
         grid-area: 3 / 1 / 6 / 3;
       }
@@ -74,19 +33,10 @@ h1 {
 
       .main-home__title {
         grid-area: 1 / 3 / 2 / 6;
-
-        h1 {
-          color: $contrast-color;
-        }
       }
 
       .main-home__subtitle {
         grid-area: 2 / 3 / 3 / 6;
-        background-color: $dark-main-color;
-
-        span {
-          color: $contrast-color;
-        }
       }
 
       .main-home__ticket {
@@ -95,16 +45,10 @@ h1 {
 
       .main-home__description {
         grid-area: 4 / 3 / 5 / 6;
-
-        span {
-          color: $contrast-color;
-        }
       }
 
       .main-home__background {
         grid-area: 1 / 3 / 7 / 6;
-        background-image: linear-gradient(rgba(0 0 0 / 0.8), rgba(0 0 0 / 0.2)),
-          url("../images/guitar-poster.jpg?width=800");
       }
     }
   }

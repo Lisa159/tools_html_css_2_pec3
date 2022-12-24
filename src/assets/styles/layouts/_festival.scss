@@ -1,25 +1,4 @@
 article {
-  header {
-    background-image: linear-gradient(rgba(0 0 0 / 0.62), rgba(0 0 0 / 0.2)),
-      url("../images/festival.jpg?width=800");
-
-    h1,
-    p {
-      color: $contrast-color;
-    }
-  }
-
-  .content__container-quote {
-    color: $dark-main-color;
-    background-color: $bg-light-main-color;
-    border-left-color: $dark-main-color;
-  }
-
-  .content__list {
-    border-top-color: $light-main-color;
-    border-bottom-color: $light-main-color;
-  }
-
   .content__list-circle {
     counter-reset: item;
 
@@ -29,7 +8,6 @@ article {
 
     > li::before {
       content: counter(item);
-      border-color: $light-main-color;
     }
   }
 }
