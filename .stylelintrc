@@ -12,7 +12,8 @@
     "indentation": null,
     "alpha-value-notation": "number",
     "number-leading-zero": "never",
-    "at-rule-no-unknown": [
+    "max-line-length": null,
+    "scss/at-rule-no-unknown": [
       true,
       {
         "ignoreAtRules": [

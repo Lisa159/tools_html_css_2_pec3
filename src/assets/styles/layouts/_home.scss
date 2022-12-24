@@ -4,9 +4,11 @@
   .btn-primary {
     @apply rounded-md bg-dark-primary py-1.5 px-3 text-base font-normal text-white h-[38px];
   }
+
   .star-item {
     @apply hidden bg-dark-primary lg:flex text-white lg:items-center lg:justify-evenly lg:w-full lg:h-full lg:items-end;
   }
+
   .ol-list-item {
     @apply flex mb-[5px] before:text-black before:h-fit before:py-1.5 before:px-2.5 before:mr-2.5 before:text-center before:rounded-[100%] before:border-2 before:border-solid before:border-light-primary;
   }
