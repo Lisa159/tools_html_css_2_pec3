@@ -4,6 +4,18 @@
 @import "festival";
 @import "footer";
 
+@layer components {
+  .btn-primary {
+    @apply rounded-md py-1.5 px-3 text-base font-normal text-white h-[38px] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+  .star-item {
+    @apply hidden lg:flex lg:items-center lg:justify-evenly lg:w-full lg:h-full lg:items-end;
+  }
+  .ol-list-item {
+    @apply flex mb-[5px] before:text-black before:h-fit before:py-1.5 before:px-2.5 before:mr-2.5 before:text-center before:rounded-[100%] before:border-2 before:border-solid;
+  }
+}
+
 main {
   color: $dark-main-color;
 }

@@ -12,12 +12,12 @@ article {
   .content__container-quote {
     color: $dark-main-color;
     background-color: $bg-light-main-color;
-    border-left: 5px solid $dark-main-color;
+    border-left-color: $dark-main-color;
   }
 
   .content__list {
-    border-top: 1px solid $light-main-color;
-    border-bottom: 1px solid $light-main-color;
+    border-top-color: $light-main-color;
+    border-bottom-color: $light-main-color;
   }
 
   .content__list-circle {
