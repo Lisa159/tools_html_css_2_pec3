@@ -15,24 +15,30 @@
     <body class="flex flex-col min-h-screen m-0 h-full">
         <include src="./views/header.html"></include>
         <main
-            class="h-full text-dark-primary flex flex-col items-center mb-5 px-5 gap-5 lg:grid lg:gap-x-[15px] lg:gap-y-[20px] lg:py-0 lg:px-5 lg:grid-rows-[1.2fr_0.4fr_1.6fr_1.4fr_1.1fr_0.8fr] lg:grid-cols-[0.8fr_0.8fr_0.9fr_1.7fr_0.9fr_0.8fr_0.8fr] main-home"
+            class="h-full text-dark-primary flex flex-col items-center mb-5 px-5 gap-5 lg:grid lg:gap-x-[15px] lg:gap-y-[20px] lg:py-0 lg:px-5 lg:grid-rows-[1.2fr_0.4fr_1.6fr_1.4fr_1.1fr_0.8fr] lg:grid-cols-[0.8fr_0.8fr_0.9fr_1.7fr_0.9fr_0.8fr_0.8fr]"
         >
-            <div class="star-item main-home__star1">
-                <i class="fa-solid fa-music"></i>
-                <i class="fa-solid fa-music"></i>
-                <i class="fa-solid fa-music"></i>
-                <i class="fa-solid fa-music"></i>
-            </div>
-            <div class="star-item main-home__star2">
+            <div
+                class="star-item lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-3"
+            >
                 <i class="fa-solid fa-music"></i>
                 <i class="fa-solid fa-music"></i>
                 <i class="fa-solid fa-music"></i>
                 <i class="fa-solid fa-music"></i>
             </div>
             <div
-                class="w-full h-24 bg-poster bg-center bg-cover lg:bg-poster-desktop lg:h-full bg-black main-home__background"
+                class="star-item lg:row-start-1 lg:row-end-2 lg:col-start-6 lg:col-end-8"
+            >
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-music"></i>
+            </div>
+            <div
+                class="w-full h-24 bg-poster bg-center bg-cover lg:bg-poster-desktop lg:h-full bg-black lg:row-start-1 lg:col-start-3 lg:row-end-7 lg:col-end-6"
             ></div>
-            <div class="self-center main-home__title">
+            <div
+                class="self-center lg:row-start-1 lg:col-start-3 lg:row-end-2 lg:col-end-6"
+            >
                 <h1
                     class="text-center text-dark-primary lg:text-white uppercase text-[4.375rem] mt-0 mb-2 font-medium leading-[1.2]"
                 >
@@ -40,7 +46,7 @@
                 </h1>
             </div>
             <div
-                class="w-full text-center bg-lighter-primary lg:bg-dark-primary main-home__subtitle"
+                class="w-full text-center bg-lighter-primary lg:bg-dark-primary lg:row-start-2 lg:col-start-3 lg:row-end-3 lg:col-end-6"
             >
                 <span
                     class="text-xl text-dark-primary lg:text-white leading-[30px]"
@@ -48,7 +54,7 @@
                 >
             </div>
             <div
-                class="self-center text-dark-primary lg:text-white text-center px-12 main-home__description"
+                class="self-center text-dark-primary lg:text-white text-center px-12 lg:row-start-4 lg:col-start-3 lg:row-end-5 lg:col-end-6"
             >
                 <span
                     >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -57,7 +63,7 @@
                 >
             </div>
             <div
-                class="flex flex-col items-center w-full gap-2.5 p-5 uppercase lg:items-end bg-lighter-primary main-home__date"
+                class="flex flex-col items-center w-full gap-2.5 p-5 uppercase lg:items-end bg-lighter-primary lg:row-start-3 lg:col-start-1 lg:row-end-6 lg:col-end-3"
             >
                 <span class="text-[2.5rem] leading-[3.75rem] lg:text-end"
                     >2 de diciembre</span
@@ -66,11 +72,13 @@
                     >Teatro Lorem Ipsum</span
                 >
             </div>
-            <div class="self-center text-xl text-center main-home__ticket">
+            <div
+                class="self-center text-xl text-center lg:row-start-3 lg:col-start-6 lg:row-end-6 lg:col-end-8"
+            >
                 <span>Entrada gratis</span>
             </div>
             <div
-                class="flex flex-col gap-4 place-items-center justify-center w-[200px] h-[100px] rounded-xl border-dark-primary border border-solid lg:w-full lg:h-full bg-lighter-primary main-home__members"
+                class="flex flex-col gap-4 place-items-center justify-center w-[200px] h-[100px] rounded-xl border-dark-primary border border-solid lg:w-full lg:h-full bg-lighter-primary lg:row-start-5 lg:col-start-5 lg:row-end-7 lg:col-end-7"
             >
                 <span>¡Conoce a los integrantes!</span>
                 <button
